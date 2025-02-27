@@ -16,12 +16,12 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-	animated: true, // Set to false to use static SVG
+	animated: false, // Set to false to use static SVG
 };
 
 const greeting = {
-	username: 'Daniel Becher',
-	title: 'Testing deployment',
+	username: 'WORK IN PROGRESS',
+	title: 'Daniel Becher - Software Engineer',
 	subTitle: emoji(
 		'A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.'
 	),
@@ -148,7 +148,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-	viewSkillBars: true, //Set it to true to show Proficiency Section
+	viewSkillBars: false, //Set it to true to show Proficiency Section
 	experience: [
 		{
 			Stack: 'Frontend/Design', //Insert stack or technology you have experience in
@@ -174,12 +174,23 @@ const workExperiences = {
 		{
 			role: 'Shift Supervisor',
 			company: 'Starbucks',
-			companylogo: require('./assets/images/facebookLogo.png'),
+			companylogo: require('./assets/images/Starbucks.png'),
 			date: 'May 2014 – Present',
 			desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			descBullets: [
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+			],
+		},
+		{
+			role: 'Pharmacy Technician',
+			company: 'CVS',
+			companylogo: require('./assets/images/CVS.png'),
+			date: 'September 2020 - July 2021',
+			desc: "I made drugs",
+			descBullets: [
+				'Drugs',
+				'Love em',
 			],
 		},
 	],
@@ -225,7 +236,7 @@ const bigProjects = {
 			],
 		},
 	],
-	display: true, // Set false to hide this section, defaults to true
+	display: false, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
