@@ -6,7 +6,7 @@ export const greeting = "Hi, I'm Daniel.";
 export const subGreeting = 'I build software.';
 export const highlightedTechStack = ['Fullstack', 'React', 'TypeScript'];
 export const techStackDelim = '·';
-export const resumePath = '/resume.pdf';
+export const resumePath = '/Daniel Becher - Resume.pdf'; // relative to public
 export const resumeButtonText = 'Download my resume';
 
 // About
