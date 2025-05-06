@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "bunx --bun vite",
 		"build": "tsc -b && vite build",
-		"deploy": "gh-pages -b gh-pages -d build",
+		"deploy": "bun run build && gh-pages -b gh-pages -d dist",
 		"preview": "vite preview",
 		"format": "prettier --write \"./**/*.{tsx,ts,css,json}\"",
 		"check-format": "prettier -c \"./**/*.{tsx,ts,css,json}\""

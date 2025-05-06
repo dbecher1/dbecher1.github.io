@@ -2,9 +2,27 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/*
-@theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@custom-variant synthwave (&:where(.synthwave, .synthwave *));
+
+@theme {
+  --animate-in: fade-in 1s ease-in-out forwards;
+  --animate-out: fade-out 1s ease-in-out forwards;
+
+  @keyframes fade-out {
+    100% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
-*/

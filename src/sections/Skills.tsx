@@ -14,7 +14,9 @@ const Skills = (props: HTMLAttributes<HTMLElement>) => {
 	return (
 		<Section id='skills' {...props}>
 			<Section.Title>Skills</Section.Title>
-			<Section.Body className='flex gap-x-4 gap-y-3 flex-wrap max-w-7/8'>
+			<Section.Body
+				className='flex justify-evenly md:justify-start gap-x-4 gap-y-3 flex-wrap max-w-7/8 mx-auto md:mx-0'
+			>
 				{skillList.map((s) => SkillTab(s))}
 			</Section.Body>
 		</Section>

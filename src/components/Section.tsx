@@ -11,9 +11,18 @@ const Section = (props: HTMLAttributes<HTMLElement>) => {
 const Title = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (
 		<div
-			className='font-semibold text-xl/12 md:text-3xl/16 
-            //text-center md:text-left
-            '
+			className='font-semibold text-xl/12 md:text-2xl/16 not-md:text-center'
+			{...props}
+		>
+			{props.children}
+		</div>
+	);
+};
+
+const CenterTitle = (props: HTMLAttributes<HTMLDivElement>) => {
+	return (
+		<div
+			className='font-semibold text-xl/12 md:text-2xl/16 text-center'
 			{...props}
 		>
 			{props.children}
@@ -30,5 +39,6 @@ const Body = (props: HTMLAttributes<HTMLDivElement>) => {
 };
 
 Section.Title = Title;
+Section.CenterTitle = CenterTitle;
 Section.Body = Body;
 export default Section;

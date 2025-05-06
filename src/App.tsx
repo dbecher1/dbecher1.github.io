@@ -6,11 +6,13 @@ import AboutMe from './sections/AboutMe';
 import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import { pageTitle } from './portfolio';
+import WorkHistory from './sections/WorkHistory';
 
 export default function App() {
 	useLayoutEffect(() => {
 		document.title = pageTitle;
 		document.documentElement.classList.add('dark');
+		//document.documentElement.classList.add('synthwave');
 
 		// set the background in the body
 		document.body.classList.add(
@@ -52,6 +54,9 @@ export default function App() {
 					<AboutMe className='md:max-w-1/2' />
 					<Skills className='md:max-w-1/2' />
 				</div>
+
+				<WorkHistory/>
+
 				<Contact />
 				{/* <div className='flex flex-wrap flex-row justify-evenly gap-4'>
 					<Card>

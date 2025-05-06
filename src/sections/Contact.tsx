@@ -1,13 +1,7 @@
 import { HTMLAttributes } from 'react';
 import Section from '../components/Section';
-
-const TempLogo = (props: { text: string }) => {
-	return (
-		<span className='bg-blue-800/50 text-lg p-2 rounded-xl'>
-			{props.text}
-		</span>
-	);
-};
+import GithubIcon from '../icons/GithubIcon';
+import LinkedInIcon from '../icons/LinkedInIcon';
 
 const Contact = (props: HTMLAttributes<HTMLElement>) => {
 	return (
@@ -26,9 +20,13 @@ const Contact = (props: HTMLAttributes<HTMLElement>) => {
 				>
 					debecher93@gmail.com
 				</a>
-				<div className='flex gap-3 flex-row'>
-					<TempLogo text='GH' />
-					<TempLogo text='LI' />
+				<div className='flex gap-2 flex-row'>
+					{/* <GithubIcon
+						className='fill-black dark:fill-white'
+					/>
+					<LinkedInIcon
+						className='fill-black dark:fill-white'
+					/> */}
 				</div>
 			</Section.Body>
 		</Section>

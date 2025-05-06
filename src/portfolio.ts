@@ -26,3 +26,31 @@ export const skillList = [
 	'Agile',
 	'Scrum',
 ];
+
+export interface WorkDesc {
+    title: string;
+    company: string;
+	location: string;
+    from: string;
+    to: string;
+    desc: string[];
+}
+
+export const myWorkHistory: WorkDesc[] = [
+	{
+		title: 'Shift Supervisor',
+		company: 'Starbucks',
+		location: 'Commack, NY / Dunn, NC',
+		from: 'May 2014',
+		to: 'Current',
+		desc: ['help', 'me', 'please']
+	},
+	{
+		title: 'Shift Supervisor',
+		company: 'Starbucks',
+		location: 'Commack, NY / Dunn, NC',
+		from: 'May 2014',
+		to: 'Current',
+		desc: ['help', 'me', 'please']
+	}
+]

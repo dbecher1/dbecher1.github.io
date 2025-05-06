@@ -26,7 +26,7 @@ const TechStack = () => {
 const Greeting = () => {
 	return (
 		<section className='flex flex-col gap-2 mb-5' id='greeting'>
-			<div className='text-4xl md:text-5xl font-bold text-blue-400 text-center md:text-left'>
+			<div className='text-4xl md:text-5xl font-bold text-blue-400 text-center md:text-left animate-in'>
 				{greeting}
 			</div>
 			<div className='text-xl md:text-3xl font-medium text-center md:text-left'>
@@ -37,7 +37,7 @@ const Greeting = () => {
 				<a
 					href={resumePath}
 					className='text-gray-100 bg-blue-600/80 hover:bg-blue-500 py-2 px-3 rounded-xl font-medium hover:shadow-md
-								drop-shadow-gray-600'
+								drop-shadow-gray-600 synthwave:bg-pink-600'
 				>
 					{resumeButtonText}
 				</a>
