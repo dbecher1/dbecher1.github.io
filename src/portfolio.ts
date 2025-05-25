@@ -1,3 +1,5 @@
+// Defining all the data here to make one centralized place to change everything
+
 // Meta
 export const pageTitle = "Daniel Becher's Portfolio";
 
@@ -35,6 +37,8 @@ export interface WorkDesc {
     to: string;
     desc: string[];
 }
+
+export const showWorkHistory = false;
 
 export const myWorkHistory: WorkDesc[] = [
 	{

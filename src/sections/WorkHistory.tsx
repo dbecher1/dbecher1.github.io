@@ -1,6 +1,6 @@
 import { HTMLAttributes } from "react";
 import Section from "../components/Section";
-import { myWorkHistory, WorkDesc } from "../portfolio";
+import { myWorkHistory, showWorkHistory, WorkDesc } from "../portfolio";
 
 const WorkSummary = (details: WorkDesc) => {
     return (
@@ -47,6 +47,7 @@ const WorkSummary = (details: WorkDesc) => {
 
 const WorkHistory = (props: HTMLAttributes<HTMLElement>) => {
     return (
+        showWorkHistory ?
         <Section
             id='workhistory'
             {...props}
@@ -59,7 +60,7 @@ const WorkHistory = (props: HTMLAttributes<HTMLElement>) => {
                     {myWorkHistory.map(hist => WorkSummary(hist))}
                 </div>
             </Section.Body>
-        </Section>
+        </Section> : <></>
     )
 }
 

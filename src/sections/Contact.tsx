@@ -2,6 +2,7 @@ import { HTMLAttributes } from 'react';
 import Section from '../components/Section';
 import GithubIcon from '../icons/GithubIcon';
 import LinkedInIcon from '../icons/LinkedInIcon';
+import EmailIcon from '../icons/EmailIcon';
 
 const Contact = (props: HTMLAttributes<HTMLElement>) => {
 	return (
@@ -13,21 +14,20 @@ const Contact = (props: HTMLAttributes<HTMLElement>) => {
 			{...props}
 		>
 			<Section.Title>Contact Me</Section.Title>
-			<Section.Body className='flex flex-col gap-3'>
-				<a
-					href='mailto:debecher93@gmail.com'
-					className='text-blue-500 hover:text-blue-300'
-				>
-					debecher93@gmail.com
+			<Section.Body className='flex gap-3 flex-row'>
+				<a href='mailto:debecher93@gmail.com'>
+					<EmailIcon className='fill-black dark:fill-white hover:fill-gray-500'/>
 				</a>
-				<div className='flex gap-2 flex-row'>
-					{/* <GithubIcon
-						className='fill-black dark:fill-white'
+				<a href="https://github.com/dbecher1">
+					<GithubIcon
+						className='fill-black dark:fill-white hover:fill-gray-500'
 					/>
+				</a>
+				<a href="https://www.linkedin.com/in/daniel-becher-441a69292">
 					<LinkedInIcon
-						className='fill-black dark:fill-white'
-					/> */}
-				</div>
+						className='fill-black dark:fill-white hover:fill-gray-500'
+					/>
+				</a>
 			</Section.Body>
 		</Section>
 	);

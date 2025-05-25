@@ -12,7 +12,6 @@ export default function App() {
 	useLayoutEffect(() => {
 		document.title = pageTitle;
 		document.documentElement.classList.add('dark');
-		//document.documentElement.classList.add('synthwave');
 
 		// set the background in the body
 		document.body.classList.add(
